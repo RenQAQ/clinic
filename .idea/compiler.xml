@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sso-oauth-resources" />
-        <module name="sso-oauth-client" />
+        <module name="login" />
         <module name="pojo" />
         <module name="sso-oauth-server" />
-        <module name="sso-oauth-client2" />
+        <module name="drug-information" />
+        <module name="sso-oauth-client" />
         <module name="oauth-login-demo" />
-        <module name="login" />
+        <module name="drug-master-data" />
+        <module name="drug-prescription" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,12 +25,15 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="clinic-web" options="-parameters" />
+      <module name="drug-information" options="-parameters" />
+      <module name="drug-master-data" options="-parameters" />
+      <module name="drug-prescription" options="-parameters" />
       <module name="login" options="-parameters" />
       <module name="oauth-login-demo" options="-parameters" />
       <module name="pojo" options="-parameters" />
       <module name="settings" options="-parameters" />
       <module name="sso-oauth-client" options="-parameters" />
-      <module name="sso-oauth-client2" options="-parameters" />
       <module name="sso-oauth-client2 (1)" options="-parameters" />
       <module name="sso-oauth-resources" options="-parameters" />
       <module name="sso-oauth-server" options="-parameters" />
